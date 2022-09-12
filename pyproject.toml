@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=62.1.0", "wheel"]
+
+
+[project]
+name = "mypackage"
+authors = [
+    {name = "Jørgen S. Dokken", email = "dokken@simula.no"}
+    ]
+version = "0.1.0"  
+description = "Minimal package for adding two numbers"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+dependencies = [
+    'numpy'
+]
+
+
+[project.optional-dependencies]
+test = [
+   "flake8",
+   "mypy",
+   "pytest",
+   "pytest-cov"
+]
+
+docs = [
+    "Sphinx",
+    "jupyter-book",
+    "pandoc"
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = [
+    "docs/",
+    "build/"
+]
