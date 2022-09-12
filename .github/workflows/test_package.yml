@@ -28,10 +28,10 @@ jobs:
 
       - name: "Install dependencies"
         run: |
-           apt-get update
-           apt-get install -y python3-pip
+           sudo apt-get update
+           sudo apt-get install -y python3-pip
            pip3 install --upgrade pip setuptools
-           apt purge -y python3-pip
+           sudo apt purge -y python3-pip
 
       - name: "Install code"
         run: pip install .[test,docs]
