@@ -1,5 +1,5 @@
 API Reference
 =============
 
-.. automodule:: numpy.linalg
+.. automodule:: mypackage
     :members:

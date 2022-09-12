@@ -1,10 +1,4 @@
 doc: # Generate Sphinx HTML documentation, including API docs
-	rm -f docs/mypackage.rst
-	rm -f docs/modules.rst
-	for file in README.md; do \
-		cp $$file docs/. ;\
-	done
-	sphinx-apidoc -o docs/ mypackage
 	jupyter book build docs
 
 clean-pytest: # Remove output from pytest
