@@ -41,6 +41,19 @@ jobs:
            pip install mypy
            python -m mypy . --exclude=build
 
+      - name: Generate coverage report
+        run: python -m pytest --cov=mypackage test
+
+      - name: Generate html report
+        run: python -m coverage html
+           
+      - name: Upload coverage report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: htmlcov
+          if-no-files-found: error
+
   test-code:
     # This code depends on the result of check-code
     needs: check-code
