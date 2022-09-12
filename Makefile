@@ -7,7 +7,7 @@ clean-pytest: # Remove output from pytest
 	rm -rf test/__pycache__
 
 clean-coverage: # Remove output from coverage
-	rm -rf .covarge htmlcov
+	rm -rf .coverage htmlcov
 
 clean-mypackage: # Remove output from installing package
 	rm -rf mypackage.egg-info mypackage/__pycache__
