@@ -55,14 +55,14 @@ jobs:
     
     steps:
      
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
 
       - uses: actions/checkout@v3
     
       - name: "Install mypackage"
         run: pip3 install .[test]
 
-      - name: Mypy check
+      - name: Run tests
         run: |
-          python3 -m pytest test
+          python3 -m pytest test/
