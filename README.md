@@ -1,4 +1,5 @@
-# reproducibility
+# Reproducible workflow for researchers
+The web-page generated in this repo can be found [here](https://jorgensd.github.io/reproducibility)
 
 This repository is a template for how to set up a reproducible python environment with GitHub.
 
