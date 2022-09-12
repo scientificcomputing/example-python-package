@@ -54,8 +54,12 @@ jobs:
         os: [ubuntu-22.04, windows-latest, macos-12]    
     
     steps:
-      - uses: actions/checkout@v3
+     
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
 
+      - uses: actions/checkout@v3
+    
       - name: "Install mypackage"
         run: pip3 install .[test]
 
