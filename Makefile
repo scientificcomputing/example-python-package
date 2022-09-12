@@ -1,5 +1,5 @@
 doc: # Generate Sphinx HTML documentation, including API docs
-    cp README.md docs/README.md
+	cp README.md docs/README.md
 	jupyter book build docs
 
 clean-pytest: # Remove output from pytest
