@@ -42,7 +42,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: output
+    id: version
     attributes:
       label: system
       description: What operating system are you using?
