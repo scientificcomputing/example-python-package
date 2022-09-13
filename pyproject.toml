@@ -2,7 +2,11 @@
 requires = ["setuptools>=62.1.0", "wheel"]
 
 [tool.setuptools]
-py-modules = ["mypackage"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 
 [project]
 name = "mypackage"
