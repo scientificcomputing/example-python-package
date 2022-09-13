@@ -1,10 +1,19 @@
-doc: # Generate Sphinx HTML documentation, including API docs
-# We want to use the README.md file from the folder as the front page of the book.
-# It has been added to _toc.yml as root
-	cp README.md docs/README.md 
-# We want to use the demos in the book, we convert them with jupytext and copy them to the documentation
-	jupytext --to=ipynb demo/demo.py --output=docs/demo.ipynb
-	jupyter book build docs
+# We want to use the README.md and contributing.md file from this folder 
+# in the Jupter book. These files should be listed in `docs/_toc.yml`
+DOCS = README.md CONTRIBUTING.md
+
+# List of Python demos (without file extenion) from the repo `demo` to include in the jupyterbook. 
+# These files should be listed in `docs/_toc.yml`
+DEMOS = demo
+
+doc: # Generate Sphinx HTML documentation, including API docs 
+	@for file in ${DOCS}; do \
+		cp $$file docs/. ;\
+	done 
+	@for demo in ${DEMOS}; do \
+		jupytext --to=ipynb demo/$$demo.py --output=docs/$$demo.ipynb ;\
+		jupyter book build -W docs ;\
+	done
 
 clean-pytest: # Remove output from pytest
 	rm -rf .pytest_cache
