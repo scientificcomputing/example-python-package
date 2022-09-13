@@ -1,6 +1,8 @@
 [build-system]
 requires = ["setuptools>=62.1.0", "wheel"]
 
+[tool.setuptools]
+py-modules = ["mypackage"]
 
 [project]
 name = "mypackage"
@@ -28,7 +30,7 @@ test = [
 docs = [
     "sphinx",
     "jupyter-book",
-    "pandoc"
+    "jupytext"
 ]
 
 [tool.mypy]

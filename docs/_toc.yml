@@ -2,4 +2,5 @@ format: jb-book
 root: README
 
 chapters:
+  - file: "demo"
   - file: "api"
