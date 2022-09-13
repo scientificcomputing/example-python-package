@@ -25,4 +25,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 
 A good idea is to look at the [issue tracker](https://github.com/jorgensd/reproducibility/issues) and see if you can resolve any open issues.  A list of good first issues can be found [here](https://github.com/jorgensd/reproducibility/contribute)
 
-If you find a bug in the source code, please [open an issue](https://github.com/jorgensd/reproducibility/issues/new).
+If you find a bug in the source code, please [open an issue](https://github.com/jorgensd/reproducibility/issues/new/choose).
