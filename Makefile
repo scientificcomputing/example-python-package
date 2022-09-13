@@ -3,7 +3,7 @@ doc: # Generate Sphinx HTML documentation, including API docs
 # It has been added to _toc.yml as root
 	cp README.md docs/README.md 
 # We want to use the demos in the book, we convert them with jupytext and copy them to the documentation
-	jupytext --to=ipynb demos/demo.py --output=docs/demo.ipynb
+	jupytext --to=ipynb demo/demo.py --output=docs/demo.ipynb
 	jupyter book build docs
 
 clean-pytest: # Remove output from pytest
