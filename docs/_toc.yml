@@ -4,3 +4,4 @@ root: README
 chapters:
   - file: "demo"
   - file: "api"
+  - file: "CONTRIBUTING"
