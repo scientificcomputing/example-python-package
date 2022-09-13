@@ -30,7 +30,7 @@ test = [
 docs = [
     "sphinx",
     "jupyter-book",
-    "pandoc"
+    "jupytext"
 ]
 
 [tool.mypy]
