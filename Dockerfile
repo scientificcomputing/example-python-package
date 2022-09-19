@@ -11,9 +11,11 @@ RUN pip3 install pip setuptools --upgrade
 
 RUN apt-get purge -y python3-setuptools
 
+
+# Install mypackage
 WORKDIR /tmp/
 RUN git clone https://github.com/jorgensd/reproducibility && \
-    pip3 install ./reproducibility
+    pip3 install ./reproducibility[docs]
 
 RUN rm -rf /tmp
 
