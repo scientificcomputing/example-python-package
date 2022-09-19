@@ -2,13 +2,22 @@
 
 FROM ubuntu:22.04
 
+
 RUN apt-get update && \
-    apt-get install -y python3-pip
+    apt-get install -y python3-pip git
 
 # Use modern setuptools from pip instead of apt
 RUN pip3 install pip setuptools --upgrade
 
-RUN apt-get purge python3-setuptools
+RUN apt-get purge -y python3-setuptools
+
+
+# Install mypackage
+WORKDIR /tmp/
+RUN git clone https://github.com/jorgensd/reproducibility && \
+    pip3 install ./reproducibility[docs]
+
+RUN rm -rf /tmp
 
 # Create user with a home directory
 ARG NB_USER

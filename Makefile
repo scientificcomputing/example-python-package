@@ -10,8 +10,9 @@ doc: # Generate Sphinx HTML documentation, including API docs
 	@for file in ${DOCS}; do \
 		cp $$file docs/. ;\
 	done 
+# We use --set-kernel with jupytext to make it possible for binder to pick it up
 	@for demo in ${DEMOS}; do \
-		jupytext --to=ipynb demo/$$demo.py --output=docs/$$demo.ipynb ;\
+		jupytext --to=ipynb --set-kernel=python3 demo/$$demo.py --output=docs/$$demo.ipynb ;\
 		jupyter book build -W docs ;\
 	done
 
