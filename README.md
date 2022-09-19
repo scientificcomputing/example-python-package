@@ -6,8 +6,7 @@ This repository is a template for how to set up a reproducible python environmen
 
 ## Python-packaging
 
-To be able to create a python package, we need a folder with the name of the package (in this repository `mypackage`), and a `pyproject.toml` file.
-
+To be able to create a python package, we need a folder with the name of the package (in this repository it is called `mypackage`, located under `src/mypackage`), and a `pyproject.toml` file.
 
 
 ## Make a repository citable
