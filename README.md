@@ -17,7 +17,7 @@ Then press `Launch`, and then `Expand to see the text below, paste it into your 
 
 Replace link in image (https://jorgensd.github.io/reproducibility) with your [Github pages url](#ghpages)
 
-[![MIT License](https://img.shields.io/github/license/jorgensd/reproducibility)](LICENSE)
+![MIT License](https://img.shields.io/github/license/jorgensd/reproducibility)
 
 Replace `username/repo` in image link with appropriate user/respository.
 
