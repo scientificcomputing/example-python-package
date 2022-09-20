@@ -1,7 +1,12 @@
 format: jb-book
-root: README
+root: index
 
 chapters:
+  - file: "badges"
+  - file: "packaging"
+  - file: "github"
+  - file: "publishing"
+ # This file does not exist in the Github repository
+ # It should be copied here by adding it in the `Makefile`
   - file: "demo"
   - file: "api"
-  - file: "CONTRIBUTING"

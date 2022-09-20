@@ -1,15 +1,8 @@
-# We want to use the README.md and contributing.md file from this folder 
-# in the Jupter book. These files should be listed in `docs/_toc.yml`
-DOCS = README.md CONTRIBUTING.md
-
 # List of Python demos (without file extenion) from the repo `demo` to include in the jupyterbook. 
 # These files should be listed in `docs/_toc.yml`
 DEMOS = demo
 
 doc: # Generate Sphinx HTML documentation, including API docs 
-	@for file in ${DOCS}; do \
-		cp $$file docs/. ;\
-	done 
 # We use --set-kernel with jupytext to make it possible for binder to pick it up
 	@for demo in ${DEMOS}; do \
 		jupytext --to=ipynb --set-kernel=python3 demo/$$demo.py --output=docs/$$demo.ipynb ;\
