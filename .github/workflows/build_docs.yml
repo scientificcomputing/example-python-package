@@ -28,15 +28,6 @@ jobs:
       - name: Copy Dockerfile into gh-pages
         run: cp Dockerfile ${PUBLISH_DIR}/
 
-      - name: Add coverage report to github pages
-        run: |
-          python -m pytest --cov=mypackage test 
-          python -m coverage html
-          cp -r htmlcov ${PUBLISH_DIR}/
-
-      - name: Print publish dir
-        run: ls ${PUBLISH_DIR}
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
