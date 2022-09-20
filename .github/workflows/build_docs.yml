@@ -4,10 +4,13 @@ on:
   push:
     branches:
       - main
-
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    env:
+      # Directory that will be published on github pages
+      PUBLISH_DIR: ./docs/_build/html
+
     steps:
       - uses: actions/checkout@v3
 
@@ -17,12 +20,22 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: python -m pip install ".[docs]"
+        run: python -m pip install ".[test,docs]"
+                
       - name: Build docs
         run: make doc
+
+      - name: Copy Dockerfile into gh-pages
+        run: cp Dockerfile ${PUBLISH_DIR}
+
+      - name: Add coverage report to github pages
+        run: |
+          python -m pytest --cov=mypackage test 
+          python -m coverage html
+          cp -r htmlcov ${PUBLISH_DIR} 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_build/html
+          publish_dir: ${PUBLISH_DIR}

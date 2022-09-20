@@ -15,7 +15,7 @@ RUN apt-get purge -y python3-setuptools
 # Install mypackage
 WORKDIR /tmp/
 RUN git clone https://github.com/jorgensd/reproducibility && \
-    pip3 install ./reproducibility[docs]
+    pip install ./reproducibility[docs]
 
 RUN rm -rf /tmp
 
