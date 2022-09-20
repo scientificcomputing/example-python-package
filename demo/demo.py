@@ -1,6 +1,5 @@
 # + [markdown]
 # # An introduction to the light format
-#
 # Author: Jørgen S. Dokken
 #
 # SPDX-License-Identifier:    MIT
