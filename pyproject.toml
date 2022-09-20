@@ -30,8 +30,9 @@ docs = [
     "jupytext", # Required to convert .py to .ipynb files
 ]
 
-binder = [
-    "jupyterlab" # Required to interface with Binder when having a Dockerfile in root
+binder = [ # Required to interface with Binder when having a Dockerfile in root
+    "jupyterlab",
+    "notebook"
 ]
 
 [tool.mypy]
