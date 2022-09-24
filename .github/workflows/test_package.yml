@@ -25,10 +25,10 @@ jobs:
     steps:
       # This action sets the current path to the root of your github repo
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10' 
+          python-version: "3.10"
 
       - name: "Install code"
         run: pip install .[test,docs]
@@ -38,15 +38,15 @@ jobs:
 
       - name: Mypy check
         run: |
-           pip install mypy
-           python -m mypy . --exclude=build
+          pip install mypy
+          python -m mypy . --exclude=build
 
       - name: Generate coverage report
         run: python -m pytest --cov=mypackage test
 
       - name: Generate html report
         run: python -m coverage html
-           
+
       - name: Upload coverage report as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -54,34 +54,22 @@ jobs:
           path: htmlcov
           if-no-files-found: error
 
-      - name: Build documentation
-        run: |
-           make doc
-
-      - name: Upload documentation
-        uses: actions/upload-artifact@v3
-        with:
-          name: documentation
-          path: docs/_build/html
-          if-no-files-found: error
-
-
   test-code:
     # This code depends on the result of check-code
     needs: check-code
     runs-on: ${{ matrix.os }}
-    
+
     strategy:
       matrix:
-        os: [ubuntu-22.04, windows-latest, macos-12]    
-    
+        os: [ubuntu-22.04, windows-latest, macos-12]
+
     steps:
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10' 
+          python-version: "3.10"
 
       - uses: actions/checkout@v3
-    
+
       - name: "Install mypackage"
         run: pip install .[test]
 
