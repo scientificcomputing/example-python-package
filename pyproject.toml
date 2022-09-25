@@ -34,3 +34,16 @@ binder = [ # Required to interface with Binder when having a Dockerfile in root
     "jupyterlab",
     "notebook"
 ]
+
+[tool.mypy]
+ignore_missing_imports = true # Does not show errors when importing untyped libraries
+exclude = [ # We only want mypy to consider files that are not generated in installing or building documentation
+    "docs/", 
+    "build/"
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=mypackage --cov-report html --cov-report term-missing -v"
+testpaths = [
+    "test"
+]
