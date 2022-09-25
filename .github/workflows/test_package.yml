@@ -24,7 +24,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.8, 3.9, "3.10"]
+        python-version: ["3.8", "3.9", "3.10"]
 
     steps:
       # This action sets the current path to the root of your github repo
@@ -52,7 +52,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-22.04, windows-latest, macos-12]
-        python-version: [3.8, 3.9, "3.10"]
+        python-version: ["3.8", "3.9", "3.10"]
 
     steps:
       - name: Set up Python ${{ matrix.python-version }}
