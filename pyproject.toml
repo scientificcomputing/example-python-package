@@ -41,3 +41,13 @@ exclude = [ # We only want mypy to consider files that are not generated in inst
     "docs/", 
     "build/"
 ]
+files = [  # Folder to which files that should be checked by mypy
+    "src",
+    "test"
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=mypackage --cov-report html --cov-report term-missing -v"
+testpaths = [
+    "test"
+]
