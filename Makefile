@@ -6,8 +6,8 @@ doc: # Generate Sphinx HTML documentation, including API docs
 # We use --set-kernel with jupytext to make it possible for binder to pick it up
 	@for demo in ${DEMOS}; do \
 		jupytext --to=ipynb --set-kernel=python3 demo/$$demo.py --output=docs/$$demo.ipynb ;\
-		jupyter book build -W docs ;\
 	done
+	jupyter book build -W docs
 
 clean-pytest: # Remove output from pytest
 	rm -rf .pytest_cache
