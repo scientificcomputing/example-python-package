@@ -1,0 +1,43 @@
+name: PyPI
+
+on:
+  push:
+    # The CI is executed on every push on every branch
+    branches:
+      - main
+  pull_request:
+    # The CI is executed on every pull request to the main branch
+    branches:
+      - main
+
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: python3 -m pip install ".[pypi]"
+
+      - name: Build a binary wheel and a source tarball
+        run: >-
+          python3 -m
+          build
+          --sdist
+          --wheel
+          --outdir dist/
+          .
+
+      - name: Publish distribution 📦 to PyPI
+        if: startsWith(github.ref, 'refs/tags')  # Only push to pypi when there is a new tag
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}

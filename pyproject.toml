@@ -34,6 +34,9 @@ binder = [ # Required to interface with Binder when having a Dockerfile in root
     "jupyterlab",
     "notebook"
 ]
+pypi = [
+    "build" # Used for building wheels and uploading to pypi
+]
 
 [tool.mypy]
 ignore_missing_imports = true # Does not show errors when importing untyped libraries
