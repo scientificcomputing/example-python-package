@@ -1,17 +1,22 @@
 [build-system] # Require setuptool version due to https://github.com/pypa/setuptools/issues/2938
 requires = ["setuptools>=61.0.0", "wheel"]
 
-
-[project] # See https://python-poetry.org/docs/pyproject/ for more keywords
-name = "mypackage" # Name of your package
-authors = [ # List of authors
-    {name = "Jørgen S. Dokken", email = "dokken@simula.no"}
+ # See https://python-poetry.org/docs/pyproject/ for more keywords for the project table
+[project]
+ # Name of your package
+name = "mypackage"
+authors = [
+    {name = "Jørgen S. Dokken", email = "dokken@simula.no"},
+    {name = "Henrik N. Finsberg", email = "henriknf@simula.no"}
     ]
-version = "0.1.0" # Version number
-description = "Minimal package for adding two numbers" # Short description of package
-readme = "README.md" # Is used for the description field in your package, see: https://python-poetry.org/docs/pyproject/#readme
-requires-python = ">=3.8" # Set requirement for minimal python version
-license = {file = "LICENSE"} # Path to license file, see: https://spdx.org/licenses/ for options
+version = "0.1.0"
+description = "Minimal package for adding two numbers"
+# "readme" the description field in your package, see: https://python-poetry.org/docs/pyproject/#readme
+readme = "README.md"
+requires-python = ">=3.8"
+ # Path to license file, see: https://spdx.org/licenses/ for options
+license = {file = "LICENSE"}
+# Direct dependencies
 dependencies = [
     'numpy'
 ]
@@ -19,10 +24,10 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-   "flake8", # Checks code for consistency, see: https://flake8.pycqa.org/en/latest/user/error-codes.html
-   "mypy", # Makes sure that typing of input/output is consistent
-   "pytest", # To run test
-   "pytest-cov" # To create coverage reports
+   "flake8", # Formatting: https://flake8.pycqa.org/en/latest/user/error-codes.html
+   "mypy", # Input/Output consistency
+   "pytest", # Testing suite
+   "pytest-cov" # Coverage reports
 ]
 
 docs = [

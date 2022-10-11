@@ -38,8 +38,3 @@ repos:
     rev: v0.981
     hooks:
       - id: mypy
-
-  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.4.0
-    hooks:
-      - id: pretty-format-toml
