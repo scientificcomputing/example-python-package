@@ -4,5 +4,4 @@
 
 ## `_toc.yml`
 
-## `_config.yml` 
-
+## `_config.yml`

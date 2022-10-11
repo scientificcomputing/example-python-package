@@ -4,4 +4,3 @@ To be able to create a python package, we need a folder with the name of the pac
 
 
 ## Pyproject.toml
-

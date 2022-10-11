@@ -25,7 +25,7 @@ body:
         cachedir: .pytest_cache
         rootdir: /root/shared
         plugins: anyio-3.6.1, cov-3.0.0
-        collected 1 item                                                                                               
+        collected 1 item
 
         test/test_code.py::test_addition PASSED
         ============================================== 1 passed in 0.01s ===============================================
@@ -49,7 +49,7 @@ body:
       placeholder: i.e. "I'm Ubuntu 20.04" or "Im using Windows 11"
   - type: textarea
     id: extra
-    attributes: 
+    attributes:
       label: Additional information
       description: If you have any additional information, please add it here.
       placeholder: You can drag and drop files here to attach them

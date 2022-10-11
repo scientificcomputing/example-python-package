@@ -41,7 +41,7 @@ pypi = [
 [tool.mypy]
 ignore_missing_imports = true # Does not show errors when importing untyped libraries
 exclude = [ # We only want mypy to consider files that are not generated in installing or building documentation
-    "docs/", 
+    "docs/",
     "build/"
 ]
 files = [  # Folder to which files that should be checked by mypy

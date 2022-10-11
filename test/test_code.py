@@ -2,7 +2,6 @@
 #
 # This file is part of my_package
 # SPDX-License-Identifier:    MIT
-
 from mypackage import addition
 
 
