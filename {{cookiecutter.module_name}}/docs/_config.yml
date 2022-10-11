@@ -1,0 +1,33 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: {{ cookiecutter.project_name }}
+author: {{ cookiecutter.full_name }}
+logo: "logo.png"
+copyright: {% now 'utc', '%Y' %}
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: cache
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/{{ cookiecutter.github_username}}/{{ cookiecutter.module_name}} # Online location of your book
+  path_to_book: _sources # Optional path to your book, relative to the repository root
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - linkify
+
+sphinx:
+  extra_extensions:
+  - 'sphinx.ext.autodoc'
+  - 'sphinx.ext.napoleon'
+  - 'sphinx.ext.viewcode'

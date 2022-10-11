@@ -20,3 +20,9 @@ test = [
    {% if cookiecutter.linting|lower == 'y' -%}"flake8",{% endif %}
    {% if cookiecutter.testing|lower == 'y' -%}"pytest",{% endif %}
 ]
+
+
+docs = [
+   {% if cookiecutter.build_docs|lower == 'y' -%}"jupyter-book",{% endif %}
+   {% if cookiecutter.build_docs|lower == 'y' -%}"jupytext",{% endif %}
+]

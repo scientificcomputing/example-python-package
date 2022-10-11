@@ -5,7 +5,14 @@ REMOVE_PATHS = [
     '{% if cookiecutter.testing|lower != "y" %} tests/{% endif %}',
     '{% if cookiecutter.testing|lower != "y" %} .github/workflows/test_package.yml{% endif %}',
     '{% if cookiecutter.linting|lower != "y" %} .github/workflows/test_formatting.yml{% endif %}',
-    '{% if cookiecutter.linting|lower != "y" %} .flake8{% endif %}'
+    '{% if cookiecutter.linting|lower != "y" %} .flake8{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} .github/workflows/build_docs.yml{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs/_config.yml{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs/_toc.yml{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs/api.rst{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs/index.md{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs/logo.png{% endif %}',
+    '{% if cookiecutter.build_docs|lower != "y" %} docs{% endif %}'
 ]
 
 for path in REMOVE_PATHS:
