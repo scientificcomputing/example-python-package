@@ -2,7 +2,7 @@
 
 Using pre-commit hooks is a great way to make sure that the code you commit to the repo follows some common style. This way, you will not end up changing the style back and forth when collaborating with other people.
 
-The file [`.pre-commit-config.yaml`](../../.pre-commit-config.yaml) contains a set of default pre-commit hooks. You can find more hooks in the [pre-commit home page](https://pre-commit.com/hooks.html).
+The file `.pre-commit-config.yaml` in the root of the repo contains a set of default pre-commit hooks. You can find more hooks in the [pre-commit home page](https://pre-commit.com/hooks.html).
 
 To install the pre-commit hook you first need to install pre-commit
 ```
