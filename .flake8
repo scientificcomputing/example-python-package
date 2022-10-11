@@ -1,5 +1,7 @@
 # flake8 does not support pyproject.toml, see:
 # https://github.com/PyCQA/flake8/issues/234
 [flake8]
-exclude = docs,venv
+exclude = docs
+          venv
+          {{cookiecutter.module_name}}
 max-line-length = 100
