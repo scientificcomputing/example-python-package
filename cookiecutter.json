@@ -6,8 +6,9 @@
     "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "Tools ensuring reproducible and standarized Python packaging.",
     "version": "0.1.0",
-    "use_mypy": "y",
+    "linting": "y",
     "testing": "y",
     "use_argparse": "y",
-    "open_source_license": ["MIT", "GPL-3.0", "Other"]
+    "open_source_license": ["MIT", "GPL-3.0", "Other"],
+    "_copy_without_render": [".github/*"]
   }

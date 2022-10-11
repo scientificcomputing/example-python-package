@@ -16,7 +16,7 @@ readme = "README.md"
 
 [project.optional-dependencies]
 test = [
-   {% if cookiecutter.use_mypy|lower == 'y' -%}"mypy",{% endif %}
+   {% if cookiecutter.linting|lower == 'y' -%}"mypy",{% endif %}
+   {% if cookiecutter.linting|lower == 'y' -%}"flake8",{% endif %}
    {% if cookiecutter.testing|lower == 'y' -%}"pytest",{% endif %}
-   "flake8"
 ]
