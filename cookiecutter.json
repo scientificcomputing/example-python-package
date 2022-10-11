@@ -1,0 +1,13 @@
+{
+    "full_name": "Jørgen S. Dokken",
+    "email": "dokken@simula.no",
+    "github_username": "jorgensd",
+    "project_name": "Package Name",
+    "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "Tools ensuring reproducible and standarized Python packaging.",
+    "version": "0.1.0",
+    "use_mypy": "y",
+    "testing": "y",
+    "use_argparse": "y",
+    "open_source_license": ["MIT", "GPL-3.0", "Other"]
+  }
