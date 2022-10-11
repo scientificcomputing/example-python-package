@@ -10,7 +10,7 @@ We recommend using the source layout. See [this chapter](https://py-pkgs.org/04-
 A [toml](https://toml.io/en/) (Tom's Obivous Minimal Language) file is a plain-text file, consisting of [tables](https://toml.io/en/v1.0.0#table)
 which are a selection of key-value pairs.
 
-An example is 
+An example is
 ```toml
 [project]
 name = "catch_us"
@@ -18,11 +18,11 @@ authors = [
     {name = "Per Ulv", email = "per@acme.no"},
     {name = "Bippe Stankelbein", email = "bippe@roadrunner.no"}
     ]
-version = "x.y.z" 
+version = "x.y.z"
 description = "Meep Meep"
-# "readme" the description field in your package, 
+# "readme" the description field in your package,
 # see: https://python-poetry.org/docs/pyproject/#readme
-readme = "README.md" 
+readme = "README.md"
 requires-python = ">=3.8"
 # Path to license file, see: https://spdx.org/licenses/
 # for a selection of licenses

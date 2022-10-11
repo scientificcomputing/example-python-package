@@ -1,12 +1,11 @@
-
 # Copyright (C) 2022 Jørgen Schartum Dokken
 #
 # This file is part of my_package
 # SPDX-License-Identifier:    MIT
-
 import importlib.metadata
 
-from .functions import addition, print_add
+from .functions import addition
+from .functions import print_add
 
 __version__ = importlib.metadata.version(__package__)
 

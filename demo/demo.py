@@ -4,17 +4,13 @@
 #
 # SPDX-License-Identifier:    MIT
 # -
-
 # + [markdown]
 # We start a new cell explicitly by using the "+" sign and can explicitly end
 # it by using the "-" sign.
 # -
-
 # If we do not use explicit indicators for starting or ending a cell, it creates a
 # new cell whenever there is a blank line
-
 # This is a new cell
-
 # Comments can be added to code by not adding a new line before the code
 import mypackage
 
