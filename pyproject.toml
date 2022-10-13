@@ -55,7 +55,13 @@ files = [  # Folder to which files that should be checked by mypy
 ]
 
 [tool.pytest.ini_options]
-addopts = "--cov=mypackage --cov-report html --cov-report term-missing -v"
+addopts = [
+    "--import-mode=importlib",
+    "--cov=mypackage",
+    "--cov-report=html",
+    "--cov-report=term-missing",
+    "-v"]
+
 testpaths = [
     "test"
 ]
