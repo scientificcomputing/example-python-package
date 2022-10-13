@@ -10,9 +10,10 @@ addopts = [
     # Other options...
     "--cov=mypackage --cov-report html --cov-report term-missing -v"
 ]
+```
 
 We use Github Actions to upload the coverage report as an artifact after executing the tests. We add the following step
-```yml
+```yaml
       - name: Run tests
         run: python -m pytest 
 
