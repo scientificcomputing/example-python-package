@@ -13,8 +13,7 @@ parts:
   - caption: Github tools
     chapters:
     - file: "part2/github"
-    - file: "part2/workflows"
-    - file: "part2/citeable"
+    - file: "part2/citable"
     - file: "part2/issues"
 
   - caption: Jupyter-book

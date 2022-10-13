@@ -9,7 +9,7 @@ authors = [
     {name = "Jørgen S. Dokken", email = "dokken@simula.no"},
     {name = "Henrik N. Finsberg", email = "henriknf@simula.no"}
     ]
-version = "0.1.0"
+version = "0.2.0.dev0"
 description = "Minimal package for adding two numbers"
 # "readme" the description field in your package, see: https://python-poetry.org/docs/pyproject/#readme
 readme = "README.md"
