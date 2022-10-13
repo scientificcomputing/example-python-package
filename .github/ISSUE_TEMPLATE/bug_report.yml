@@ -9,7 +9,7 @@ body:
     attributes:
       label: How to reproduce the bug
       description: Tell us how one can reproduce the bug
-      placeholder: Run `python3 -m pytest -xvs test`
+      placeholder: Run `python -m pytest -xvs test`
     validations:
       required: true
   - type: textarea
@@ -19,7 +19,7 @@ body:
       description: If you get an error message or any output, please add it here
       render: bash
       placeholder: |
-        root@1516b1da338c:~/shared# python3 -m pytest -xvs test/
+        root@1516b1da338c:~/shared# python3 -mpytest -xvs test/
         ============================================= test session starts ==============================================
         platform linux -- Python 3.10.4, pytest-7.1.3, pluggy-1.0.0 -- /usr/bin/python3
         cachedir: .pytest_cache
