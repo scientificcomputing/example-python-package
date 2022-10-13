@@ -5,10 +5,10 @@ parts:
   - caption: Python packaging
     chapters:
     - file: "part1/packaging"
+    - file: "part1/testing"
     - file: "part1/coverage"
     - file: "part1/linting"
     - file: "part1/typing"
-    - file: "part1/testing"
     - file: "part1/pre_commit.md"
 
   - caption: Github tools
