@@ -3,7 +3,7 @@
 ## Following the PEP8 style guide
 To ensure that your Python-code is well formatted, one can use tools such as [flake8](https://flake8.pycqa.org/en/latest/), which can be installed with 
 ```bash
-python3 -m pip install flake8
+python -m pip install flake8
 ```
 Flake8 checks the consistency (following the [PEP8 style guide](https://peps.python.org/pep-0008/)) of your code, using
 - Pyflake, with the following [checks](https://flake8.pycqa.org/en/latest/user/error-codes.html)
@@ -11,11 +11,11 @@ Flake8 checks the consistency (following the [PEP8 style guide](https://peps.pyt
 
 Flake8 can be executed with
 ```bash
-python3 -m flake8
+python -m flake8
 ```
 Call 
 ```bash
-python3 -m flake8 --help
+python -m flake8 --help
 ```
 for listing the listing options
 
@@ -34,11 +34,11 @@ However, type-checking does not happen during run-time.
 We prefer using [mypy](http://mypy-lang.org/) to perform these checks.
 Mypy can be installed from PYPI
 ```bash
-python3 -m pip install mypy
+python -m pip install mypy
 ```
 and be executed as
 ```bash
-python3 -m mypy
+python -m mypy
 ```
 We add the following options to `pyproject.toml`
 ```toml
