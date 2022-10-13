@@ -36,3 +36,5 @@ addopts = [
 ]
 ```
 The last option is due to pytest's recommendation for new projects, see [Choosing an import mode](https://docs.pytest.org/en/latest/explanation/goodpractices.html#choosing-an-import-mode) for more information.
+
+For other inputs to `[tool.pytest.ini_options]` see: [https://docs.pytest.org/en/latest/reference/customize.html#pyproject-toml](https://docs.pytest.org/en/latest/reference/customize.html#pyproject-toml)
