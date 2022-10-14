@@ -13,6 +13,7 @@ python -m pip install pytest
 You can run `pytest` as
 ```bash
 python -m pytest
+```
 Pytest will then find all files with names like `test_*.py` and `*_test.py`, see: [Conventions for test discovery](https://docs.pytest.org/en/latest/explanation/goodpractices.html#test-discovery) for more information.
 
 We add the following information to `pyproject.toml` under table header: `[project.optional-dependencies]`
