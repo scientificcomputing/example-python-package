@@ -19,9 +19,6 @@ parts:
   - caption: Jupyter-book
     chapters:
     - file: "part3/publishing"
-
-  - caption: Creating a Package API
-    chapters:
     - file: "part3/auto_api"
     - file: "api"
 

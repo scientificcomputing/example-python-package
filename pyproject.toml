@@ -43,6 +43,8 @@ pypi = [
     "build" # Used for building wheels and uploading to pypi
 ]
 
+all = ["mypackage[test,docs,binder,pypi]"]
+
 [tool.mypy]
 ignore_missing_imports = true # Does not show errors when importing untyped libraries
 exclude = [ # We only want mypy to consider files that are not generated in installing or building documentation
