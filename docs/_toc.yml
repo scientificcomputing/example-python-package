@@ -16,10 +16,9 @@ parts:
     - file: "part2/citable"
     - file: "part2/issues"
 
-  - caption: Jupyter-book
+  - caption: Documentation
     chapters:
-    - file: "part3/publishing"
-    - file: "part3/auto_api"
+    - file: "part3/documentation"
     - file: "api"
 
   - caption: Demos
