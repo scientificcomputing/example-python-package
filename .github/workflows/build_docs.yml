@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -29,6 +30,7 @@ jobs:
         run: cp Dockerfile ${PUBLISH_DIR}/
 
       - name: Deploy
+        if: ${{ github.event.push }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
