@@ -7,9 +7,11 @@ We recommend using [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) wh
 We add to the `addopts` section of the `[tool.pytest.ini_options]` table:
 ```toml
 addopts = [
-    # Other options...
-    "--cov=mypackage --cov-report html --cov-report term-missing -v"
-]
+    # Other options
+    "--cov=mypackage",
+    "--cov-report=html",
+    "--cov-report=term-missing",
+    "-v"]
 ```
 
 We use Github Actions to upload the coverage report as an artifact after executing the tests. We add the following step
