@@ -11,6 +11,7 @@ addopts = [
     "--cov=mypackage",
     "--cov-report=html",
     "--cov-report=term-missing",
+    "--cov-append",
     "-v"]
 ```
 
