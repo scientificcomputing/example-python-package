@@ -10,10 +10,12 @@ More information about workflows can be found in the [Github Documentation](http
 
 ## Actions
 [Github Actions](https://github.com/features/actions) is a prebuilt set of instructions to make it easier to interact with Github.
-The actions officially maintained by Github can be found at: phttps://github.com/actions](https://github.com/actions)
+The actions officially maintained by Github can be found at: [GitHub/actions](https://github.com/actions)
 
 ## Uploading artifacts
 As covered in the [Coverage report](../part1/coverage)-section, we use the [Upload artifact action](https://github.com/actions/upload-artifact#readme)
+
+(publishing-to-pages)=
 
 ## Publishing to Pages
 There are several ways to publish a set of html files to Github Pages.
