@@ -26,6 +26,8 @@ exclude = docs,venv
 max-line-length = 100
 ```
 
+To ignore `flake8` formatting on certain lines, or ignore certain rules, see: [Ignoring Errors with Flake8](https://flake8.pycqa.org/en/3.1.1/user/ignoring-errors.html).
+
 ## Code consistency
 Flake8 only checks the consistency of your code to a certain extent.
 Modern Python allows for [type hints](https://peps.python.org/pep-0484/) which means that you can specify the input and output type for functions.
@@ -56,3 +58,5 @@ files = [
 ]
 ```
 where `ignore_missing_imports` is set to `True` to supress all errors coming from third-party libraries that are untyped.
+
+To let `mypy` ignore single lines or whole files, see: [Locally silencing the checker](https://mypy.readthedocs.io/en/stable/common_issues.html#spurious-errors-and-locally-silencing-the-checker).
