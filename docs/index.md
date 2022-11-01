@@ -1,6 +1,9 @@
 # Reproducible workflow for researchers
 
-This repository is a template for how to set up a reproducible Python environment with GitHub.
+This webpage contains information about useful tools for reproducible research
+
+## Cookiecutter
+To set up a repository with features from this webpage, see: [Scientific Computing/template repo](https://scientificcomputing.github.io/template-repo/)
 
 ## Contents
 ```{tableofcontents}
