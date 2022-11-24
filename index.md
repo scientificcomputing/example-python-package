@@ -7,3 +7,4 @@ To set up a repository with features from this webpage, see: [Scientific Computi
 
 ## Contents
 ```{tableofcontents}
+```
