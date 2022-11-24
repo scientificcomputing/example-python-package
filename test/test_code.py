@@ -1,4 +1,3 @@
-# %%
 # Copyright (C) 2022 Jørgen Schartum Dokken
 #
 # This file is part of my_package
@@ -6,7 +5,6 @@
 from mypackage import addition
 
 
-# %%
 def test_addition():
     a = 5
     b = 3
