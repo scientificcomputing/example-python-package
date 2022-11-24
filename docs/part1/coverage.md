@@ -17,7 +17,7 @@ addopts = [
 We use Github Actions to upload the coverage report as an artifact after executing the tests. We add the following step
 ```yaml
       - name: Run tests
-        run: python -m pytest 
+        run: python -m pytest
 
       - name: Upload coverage report as artifact
         if: matrix.os == 'ubuntu-22.04' && matrix.python-version == '3.10'
