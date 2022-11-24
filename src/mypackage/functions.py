@@ -2,7 +2,6 @@
 #
 # This file is part of mypackage
 # SPDX-License-Identifier:    MIT
-
 __all__ = ["addition", "print_add"]
 
 

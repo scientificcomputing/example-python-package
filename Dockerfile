@@ -2,16 +2,14 @@
 
 FROM ubuntu:22.04
 
+ENV DEB_PYTHON_INSTALL_LAYOUT=deb_system
+
 # We install pip and git from https://packages.ubuntu.com/jammy/apt
 RUN apt-get update && \
     apt-get install -y python3-pip git
 
 # We upgrade pip and install setuptools
 RUN pip3 install pip setuptools --upgrade
-
-# We remove the version of setuptools install via apt, as it is outdated
-RUN apt-get purge -y python3-setuptools
-
 
 # We set the working directory to install docker dependencies
 WORKDIR /tmp/

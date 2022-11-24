@@ -1,7 +1,7 @@
 # Python formatting
 
 ## Following the PEP8 style guide
-To ensure that your Python-code is well formatted, one can use tools such as [flake8](https://flake8.pycqa.org/en/latest/), which can be installed with 
+To ensure that your Python-code is well formatted, one can use tools such as [flake8](https://flake8.pycqa.org/en/latest/), which can be installed with
 ```bash
 python -m pip install flake8
 ```
@@ -13,7 +13,7 @@ Flake8 can be executed with
 ```bash
 python -m flake8
 ```
-Call 
+Call
 ```bash
 python -m flake8 --help
 ```
@@ -52,7 +52,7 @@ exclude = [
     "build/"
 ]
  # Folder to check with mypy
-files = [ 
+files = [
     "src",
     "tests" # Does not show errors when importing untyped libraries
 ]

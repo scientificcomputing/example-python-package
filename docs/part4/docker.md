@@ -1,4 +1,4 @@
-# Publishing Docker image for your package 
+# Publishing Docker image for your package
 Publishing a [Docker image](https://docs.docker.com/get-started/#what-is-a-container-image) is perhaps one of the best ways to make sure that people are able to run your package in exactly the same environment as you.
 
 ## Github Packages

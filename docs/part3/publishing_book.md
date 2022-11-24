@@ -1,6 +1,6 @@
 # Publishing a Jupyter-book as a webpage
 
-To make it simple to integrate the Jupyter-book with Github, we using Github Pages, as described in 
+To make it simple to integrate the Jupyter-book with Github, we using Github Pages, as described in
 [Publishing to Github Pages](publishing-to-pages).
 
 ## Official Github Actions

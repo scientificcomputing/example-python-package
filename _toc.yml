@@ -1,0 +1,40 @@
+format: jb-book
+root: index
+
+parts:
+  - caption: Python packaging
+    chapters:
+    - file: "docs/part1/packaging"
+    - file: "docs/part1/testing"
+    - file: "docs/part1/coverage"
+    - file: "docs/part1/linting"
+    - file: "docs/part1/pre_commit.md"
+
+  - caption: Github tools
+    chapters:
+    - file: "docs/part2/github"
+    - file: "docs/part2/citable"
+    - file: "docs/part2/issues"
+
+  - caption: Documentation
+    chapters:
+    - file: "docs/part3/documentation"
+    - file: "docs/api"
+    - file: "docs/part3/publishing_book"
+
+  - caption: Demos
+    chapters:
+    - file: "docs/part3/auto_demos"
+    - file: "demo/add_numbers"
+
+  - caption: Distribution
+    chapters:
+    - file: "docs/part4/pypi"
+    - file: "docs/part4/conda"
+    - file: "docs/part4/docker"
+
+  - caption: Other Features
+    chapters:
+    - file: "docs/part5/badges"
+
+

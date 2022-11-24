@@ -67,3 +67,8 @@ addopts = [
 testpaths = [
     "test"
 ]
+
+
+# Pair notebooks with python files
+[tool.jupytext]
+formats = "demos///ipynb,demos///py:percent"
