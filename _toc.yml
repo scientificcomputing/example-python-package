@@ -7,12 +7,6 @@ parts:
     chapters:
     - file: "demo/add_numbers"
 
-  - caption: Distribution
+  - caption: API
     chapters:
-    - file: "docs/part4/pypi"
-    - file: "docs/part4/conda"
-    - file: "docs/part4/docker"
-
-  - caption: Other Features
-    chapters:
-    - file: "docs/part5/badges"
+    - file: api.rst
