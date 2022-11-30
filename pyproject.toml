@@ -33,6 +33,7 @@ test = [
 docs = [
     "jupyter-book", # Required to build documentation
     "jupytext", # Required to convert .py to .ipynb files
+    "ipython!=8.7.0" # https://github.com/ipython/ipython/issues/13845
 ]
 
 binder = [ # Required to interface with Binder when having a Dockerfile in root
