@@ -8,4 +8,4 @@ See [Publishing to Github Packages](https://docs.github.com/en/actions/publishin
 You can choose if the image is public or private, see [Access control](https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility) for more information.
 
 ## DockerHub
-There are [Github workflows](../part2/github.md) for [publishing to DockerHub](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub).
+There are [Github workflows](https://scientificcomputing.github.io/gh-workflows.html#workflows) for [publishing to DockerHub](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub).
