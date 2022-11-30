@@ -3,23 +3,10 @@ root: index
 
 parts:
 
-  - caption: Documentation
-    chapters:
-    - file: "docs/part3/documentation"
-    - file: "docs/api"
-    - file: "docs/part3/publishing_book"
-
   - caption: Demos
     chapters:
-    - file: "docs/part3/auto_demos"
     - file: "demo/add_numbers"
 
-  - caption: Distribution
+  - caption: API
     chapters:
-    - file: "docs/part4/pypi"
-    - file: "docs/part4/conda"
-    - file: "docs/part4/docker"
-
-  - caption: Other Features
-    chapters:
-    - file: "docs/part5/badges"
+    - file: docs/api
