@@ -3,15 +3,8 @@ root: index
 
 parts:
 
-  - caption: Documentation
-    chapters:
-    - file: "docs/part3/documentation"
-    - file: "docs/api"
-    - file: "docs/part3/publishing_book"
-
   - caption: Demos
     chapters:
-    - file: "docs/part3/auto_demos"
     - file: "demo/add_numbers"
 
   - caption: Distribution
