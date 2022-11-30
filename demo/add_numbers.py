@@ -12,7 +12,6 @@
 #     language: python
 #     name: python3
 # ---
-
 # # Using mypackage
 # Author: Jørgen S. Dokken
 #
