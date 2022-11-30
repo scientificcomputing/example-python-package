@@ -9,4 +9,4 @@ parts:
 
   - caption: API
     chapters:
-    - file: api.rst
+    - file: docs/api
