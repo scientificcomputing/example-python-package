@@ -1,11 +1,10 @@
 name: Github Pages
 
 on:
-  push:
-    workflow_run:
-      workflows: [Test package]
-      types:
-        - completed
+  workflow_run:
+    workflows: [Test package]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
