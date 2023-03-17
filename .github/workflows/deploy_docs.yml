@@ -18,8 +18,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-steps:
-  # Single deploy job since we're just deploying
+jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
