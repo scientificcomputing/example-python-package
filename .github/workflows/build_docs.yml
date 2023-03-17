@@ -62,8 +62,6 @@ jobs:
             });
             var fs = require('fs');
             fs.writeFileSync('${{github.workspace}}/code-coverage-report.zip', Buffer.from(download.data));
-
-      - name: Unzip Coverage report
       - run: Unzip code-coverage-report.zip ${{ env.PUBLISH}}/code-coverage-report
 
       - name: Upload artifact
