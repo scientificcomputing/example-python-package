@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     workflow_run:
-      workflows: ["Test package"]
+      workflows: [Test package]
       types:
         - completed
 
