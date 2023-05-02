@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
       - name: Set up Python ${{ matrix.python-version }}
@@ -39,7 +39,7 @@ jobs:
         run: python -m pytest -xvs
 
       - name: Upload coverage report as artifact
-        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.11'
         uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
